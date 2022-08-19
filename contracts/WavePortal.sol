@@ -21,3 +21,37 @@ contract WavePortal {
         return totalWaves;
     }
 }
+
+//interacting with the wallet
+const wave = async () => {
+    try {
+        const { ethereum } = window; 
+
+        if (ethereum) {
+            const provider = new ethers.providers.Web3Provider(ethereum);
+            const signer = provider.getSigner();
+            const WavePortalContract = new ethers.Contract(contractAddress, contractABI, signer);
+
+    let count = await WavePortalContract.getTotalWaves();
+    console.log("Retrieved total wave count...," count.toNumber());
+        } else {
+            console.log("Ethereum object doesnt exist!");
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

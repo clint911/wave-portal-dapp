@@ -14,3 +14,5 @@ node scripts/sample-script.js
 npx hardhat help
 ```
 # wave-portal-dapp
+
+my wallet address for this dapp = 0x3676693E70D627Ae039815fdbD70d3e0ea1F3C1d
