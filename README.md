@@ -16,3 +16,5 @@ npx hardhat help
 # wave-portal-dapp
 
 my wallet address for this dapp = 0x3676693E70D627Ae039815fdbD70d3e0ea1F3C1d
+contract addy address(updated version) = 0x5FbDB2315678afecb367f032d93F642f64180aa3
+a newer accurate more updated =  0xecC99A952B967B13dD84341B6A96b076626aC427

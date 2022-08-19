@@ -37,8 +37,8 @@
       ]
     },
     "/home/clinton/clinton/projects/learn-web3/my-wave-portal/contracts/WavePortal.sol": {
-      "lastModificationDate": 1660666051592,
-      "contentHash": "0ac038e671a3bca4d91818bd34c7766a",
+      "lastModificationDate": 1660900259459,
+      "contentHash": "c3093e991519e659d8469f1664c1b3e5",
       "sourceName": "contracts/WavePortal.sol",
       "solcConfig": {
         "version": "0.8.4",
