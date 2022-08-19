@@ -1,5 +1,5 @@
 const main = async () => {
-   // const [owner, randomPerson] = await hre.ethers.getSigners();
+    const [owner, randomPerson] = await hre.ethers.getSigners();
 
     const waveContractFactory = await hre.ethers.getContractFactory("WavePortal");
     const waveContract = await waveContractFactory.deploy({value: hre.ethers.utils.parseEther("0.1"),
@@ -14,9 +14,12 @@ let contractBalance = await hre.ethers.provider.getBalance(
     waveContract.address
 );
     console.log("Contract balance:", hre.ethers.utils.formatEther(contractBalance));
-    /**send wave */
+    /**send 2  waves */
     let waveTxn = await waveContract.wave("A message");
     await waveTxn.wait();
+
+    const waveTxn2 = await waveContract.wave("The second wave");
+    await waveTxn2.wait(); 
  /**
   * Get contractBalance to see what happened
   */
